@@ -9,7 +9,7 @@ use Date::Simple () ;
 use Data::Dumper ;
 
 our @ISA = qw (HTTP::Request) ;
-our $VERSION = '0.02' ;
+our $VERSION = '0.03' ;
 
 =head1 NAME
 

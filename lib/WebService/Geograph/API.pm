@@ -10,7 +10,7 @@ use LWP::UserAgent ;
 use Data::Dumper ;
 
 our @ISA = qw ( LWP::UserAgent ) ;
-our $VERSION = '0.02' ;
+our $VERSION = '0.03' ;
 
 
 sub new {
@@ -150,6 +150,16 @@ a standard C<HTTP::Response> object with some additional fields. If no errors oc
 results of the query will be located inside I<results> ;
 
 	my $data = $rv->{results} ;
+
+=item C<execute_request>
+
+Internal method that executes a request and blesses the response into a 
+C<WebService::Geograph::Response> object.
+
+=item C<create_results_node>
+
+Intenal method which assigns the actual data returned from the API within the 
+response objects 'results' key.
 
 =back
 
