@@ -10,7 +10,7 @@ use LWP::UserAgent ;
 use Data::Dumper ;
 
 our @ISA = qw ( LWP::UserAgent ) ;
-our $VERSION = '0.03' ;
+our $VERSION = '0.04' ;
 
 
 sub new {
